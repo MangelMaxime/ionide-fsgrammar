@@ -569,12 +569,12 @@
                     }
                 },
                 {
-                    "name": "comment.line.markdown.fsharp",
+                    "name": "comment.line.xml.fsharp",
                     "begin": "///",
                     "while": "///",
                     "patterns": [
                         {
-                            "include": "text.html.markdown"
+                            "include": "text.xml"
                         }
                     ]
                 },

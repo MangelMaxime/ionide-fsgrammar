@@ -280,6 +280,13 @@ let inline method<'a> prefix chunck dzd zd = promise {
         let! dzdz = ""
     }
 
+let f  x y =
+    promise {
+        let syncImages = new System.Collections.Generic.List<_>()
+
+        do! x
+        return ()
+}
 
 let v ``var with spaces``= ""
 
@@ -666,3 +673,105 @@ let incorrect =
         }
         let loadedModel = { loadedModel with FormState = Form.setWaiting false loadedModel.FormState }
         ())
+
+
+/// **Description**
+///
+/// Send a **DELETE** request to the specified resource and apply the provided `decoder` to the response.
+///
+/// This method set the `ContentType` header to `"application/json"`.
+///
+/// If the decoder succeed, we return `Ok 'Response`.
+///
+/// If the decoder failed, we return `Error "explanation..."`
+///
+/// **Parameters**
+///   * `url` - parameter of type `string` - URL to request
+///   * `data` - parameter of type `JsonValue`
+///   * `decoder` - parameter of type `Decoder<'Response>`
+///   * `properties` - parameter of type `RequestProperties list option` - Parameters passed to fetch
+///
+/// **Output Type**
+///   * `JS.Promise<Result<'Response,string>>`
+///
+/// **Exceptions**
+///
+
+
+/// <summary>
+///
+/// </summary>
+/// <param name="url"></param>
+/// <param name="data"></param>
+/// <param name="decoder"></param>
+/// <param name="properties"></param>
+/// <typeparam name="Response"></typeparam>
+/// <returns></returns>
+
+
+/// <summary>
+///  This class performs an important function.
+/// </summary>
+/// <summary><c>DoWork</c> is a method in the <c>TestClass</c> class.
+/// </summary>
+/// <code>
+/// let markdownDemo (arg1 : string) (arg2 : string) =
+///     ""
+///
+/// type Alias = int
+///
+/// type Alpha = class end
+/// type LightDU =
+///     | CaseA
+///     | CaseB
+/// </code>
+/// <summary>
+/// This sample shows how to specify the <see cref="Fetch"/> constructor as a cref attribute.
+/// </summary>
+/// <example>
+/// This sample shows how to call the <see cref="GetZero"/> method.
+/// <code>
+/// let markdownDemo (arg1 : string) (arg2 : string) =
+///     ""
+///
+/// </code>
+/// </example>
+/// <exception cref="System.Exception">Thrown when...</exception>
+/// <summary>Here is an example of a bulleted list:
+/// <list type="bullet">
+/// <item>
+/// <description>Item 1.</description>
+/// </item>
+/// <item>
+/// <description>Item 2.</description>
+/// </item>
+/// </list>
+/// </summary>
+/// <para>
+/// This should be a new paragraph
+/// </para>
+/// <param name="url">URL to request</param>
+/// <param name="data">Data sent via the body, it will be converted to JSON before</param>
+/// <param name="properties">Parameters passed to fetch</param>
+/// <param name="isCamelCase">Options passed to Thoth.Json to control JSON keys representation</param>
+/// <param name="extra">Options passed to Thoth.Json to extends the known coders</param>
+/// <param name="responseResolver">Used by Fable to provide generic type info</param>
+/// <param name="dataResolver">Used by Fable to provide generic type info</param>
+/// <summary>
+/// The <paramref name="url"/> parameter takes a string.
+/// </summary>
+/// <remarks>
+/// You may have some additional information about this class.
+/// </remarks>
+/// <summary>
+/// <para>Here's how you could make a second paragraph in a description. <see cref="System.Console.WriteLine(System.String)"/> for information about output statements.</para>
+/// <seealso cref="System.String"/>
+/// </summary>
+/// <typeparam name="Data">Type of the data to serialize to JSON in the body</typeparam>
+/// <typeparam name="Response">Type of the response</typeparam>
+/// <summary>
+/// Creates a new array of arbitrary type <typeparamref name="Response"/>
+/// </summary>
+/// <summary>The Name property represents the employee's name.</summary>
+/// <value>The Name property gets/sets the value of the string field, _name.</value>
+/// <returns>Returns a <c>JS.Promise<Result<'Response,string>></c></returns>
