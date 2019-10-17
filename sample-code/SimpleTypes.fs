@@ -152,6 +152,8 @@ let (<<.) a = 1
 let inline internal (<==) (x : int) ys = x + ys
 let inline internal (<==) x ys = x + ys
 
+2 <== 3 |> ignore
+
 // Arrow should be colored as a keyword and int as type definition
 let exec (buildOptions: int -> int -> int -> int) args = ""
 
