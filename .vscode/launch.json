@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "preLaunchTask": "FakeBuild",
+      //"preLaunchTask": "FakeBuild",
       "name": "Launch Extension",
       "type": "extensionHost",
       "runtimeExecutable": "${execPath}",      

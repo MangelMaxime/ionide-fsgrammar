@@ -2,7 +2,7 @@ image:
   file: .docker/Dockerfile
 
 ports:
-  - port: 8080
+  - port: 6080
 
 tasks:
   - before: dotnet tool restore && dotnet paket restore
